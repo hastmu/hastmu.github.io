@@ -1,0 +1,25 @@
+Date: Fri, 08 Nov 2024 16:44:15 +0000
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e                0 Contents-all
+ bf4c459efece66985eaba2893b916c2c               33 Contents-all.gz
+ d41d8cd98f00b204e9800998ecf8427e                0 Packages
+ 43e48d095c332fce5e7e25d036a3bb99               29 Packages.gz
+ 45ed9b4ef393dbd7597337ed3363d4c9               38 Release
+SHA1:
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Contents-all
+ a4634416a27ad8e9f2699262e1034ee9c55a8a09               33 Contents-all.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Packages
+ e1d5f7c31642d17b2ca691ffc1c6e08080545ec1               29 Packages.gz
+ 0ef112969161b51de559bf355a9c536ce3bb2f37               38 Release
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Contents-all
+ 4cb971e74c60a3f889f65e32b17430ae4e36deae9c53c15cb945f793840003e1               33 Contents-all.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Packages
+ 451aa3d9de752c057b26514bda84ca0146ca546402a5edd8d9335918534e1f73               29 Packages.gz
+ 07c68ceb0a4d38b07d5c0384cb94cdc52f4ea67e6663ef01f86646374ee77469               38 Release
+SHA512:
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 Contents-all
+ 357780202b0aa5743888f98b6c2cd7cfb8229c0756a9c71f9ebe4f9084bb216d55479387a894371e8bfaae3147a60fc589cb9a815aefe3d344c71082f1506dbb               33 Contents-all.gz
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 Packages
+ 556bb1483830cda8d0a28e670090505c4ae09b69e23d25b0b467d1ba6bbeab1fea77e1a524949dcb6db2d3176fd24137c2049aca3fd31dfa97147011bc77438c               29 Packages.gz
+ d862ea9491df24e627bd7b747cf723151811f9cd4e4144bf592f3c8ac505694bc1655144afc8b51bc2b399be1ecd256725e42d7ed4c117888d7b732c17cf3e67               38 Release
