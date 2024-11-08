@@ -45,12 +45,12 @@ BLOCK
 
    for arch in ${!ARCH[@]}
    do
-      dpkg-scanpackages --arch "${arch}" "${DIST[${BRANCH}.pool.${arch}]}" > "${DIST[${BRANCH}.${arch}]}/Packages"
+      ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; dpkg-scanpackages --arch "${arch}" "${DIST[${BRANCH}.pool.${arch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Packages" )
       gzip -kc "${DIST[${BRANCH}.${arch}]}/Packages" > "${DIST[${BRANCH}.${arch}]}/Packages.gz"
-      apt-ftparchive contents "${DIST[${BRANCH}.pool.${arch}]}" > "${DIST[${BRANCH}.${arch}]}/Contents-${arch}"
+      ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; apt-ftparchive contents "${DIST[${BRANCH}.pool.${arch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Contents-${arch}" )
       gzip -kc "${DIST[${BRANCH}.${arch}]}/Contents-${arch}" > "${DIST[${BRANCH}.${arch}]}/Contents-${arch}.gz"
-      apt-ftparchive release  "${DIST[${BRANCH}.${arch}]}" > "${DIST[${BRANCH}.${arch}]}/Release"
-      apt-ftparchive release -c "${DIST[${BRANCH}.release]}/release.conf" "${DIST[${BRANCH}.release]}" > "${DIST[${BRANCH}.release]}/Release"
+      ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release  "${DIST[${BRANCH}.${arch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Release" )
+      ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release -c "${DIST[${BRANCH}.release]#*/}/release.conf" "${DIST[${BRANCH}.release]#*/}" > "${DIST[${BRANCH}.release]#*/}/Release" )
    done
 done
 

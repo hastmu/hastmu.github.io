@@ -1,34 +1,34 @@
 Architectures: all
 Codename: stable
 Components: main
-Date: Fri, 08 Nov 2024 16:53:30 +0000
+Date: Fri, 08 Nov 2024 17:03:28 +0000
 Label: Local APT Repository
 Origin: hastmu
 MD5Sum:
- c2dbb525991c1505bff8e9d3ae4983e0              134 Release
+ b81ea3668cce3d87d45ce1d3161e8eda              134 Release
  d41d8cd98f00b204e9800998ecf8427e                0 main/noarch/Contents-all
- 0d35cd248811614f509956b0ec84b1e4               33 main/noarch/Contents-all.gz
+ 47d3039892695db8a8fdd210705a0f02               33 main/noarch/Contents-all.gz
  d41d8cd98f00b204e9800998ecf8427e                0 main/noarch/Packages
- 750160dbb994b9a58521708246aca7f5               29 main/noarch/Packages.gz
- 92480784a57fda80a41eac63342ffe36             2000 main/noarch/Release
+ f7c60185871101611164408bf23b0bd6               29 main/noarch/Packages.gz
+ bb200b47ce3c45bb4da6588e85223f21             2000 main/noarch/Release
 SHA1:
- 4d95bb69f40bcc12783e18269847e864e650b980              134 Release
+ b373bd4d5c48dae6a69e1d0156665846ffa2e806              134 Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/noarch/Contents-all
- 97a02a0a0b05564b06757d3ba9557ccc63d4edee               33 main/noarch/Contents-all.gz
+ 7b61ea1146587951fb5f533a4e147eaf9cb5fb90               33 main/noarch/Contents-all.gz
  da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/noarch/Packages
- ce41e023a0bd2d172ea41be7ea6748ba47d50d1b               29 main/noarch/Packages.gz
- 536610144f992f90614242e9b4fadf26420b39f0             2000 main/noarch/Release
+ fc5d81296ebb9f3f43127bdb4f893b02e57a7494               29 main/noarch/Packages.gz
+ a2f3e5cc67f2f2c87158df064cca17ef26a4f15a             2000 main/noarch/Release
 SHA256:
- 737a3d61a069941f33a225f2b4e373244af372baa1289d843e1dbe1a8d9a1632              134 Release
+ 030158f9e3b53770eb3207d29dca68bf04fd77196da40d3207e7d4f300cda88f              134 Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/noarch/Contents-all
- 67389b64d1dc3991df112ac1c8a0c35031da50985c5cbc501541d688c2a30016               33 main/noarch/Contents-all.gz
+ 9f6c05a233143c46a1d280ec5e2ce04fcdb54223a08806a79d86fd76e1c3ce50               33 main/noarch/Contents-all.gz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/noarch/Packages
- a24680f7323efba6498af0ad45b8e2ede95ea6975fc404230cc6097747c4e58b               29 main/noarch/Packages.gz
- 1acf095f372972db6a947130dff8667db2ffee7564db86eddc20cda896e23b53             2000 main/noarch/Release
+ 409f494d3680e1b50046b723399125676c09cd4e50a45b88eda22aff400f05b1               29 main/noarch/Packages.gz
+ 4dcc84890591a7ef595da1c40af15699a629d9e267dcd75e17d16e4a8185a12a             2000 main/noarch/Release
 SHA512:
- 034f3485b7258381c162d98b77a1b27cf4c99e27ec63056cf898c0f847ea1df4ef15332d21355bcdf8c6529ab4e9dc5332adfa8cfe43deec426912d39aa0750d              134 Release
+ 90c195a98b7a06a19738395d4e80f44c9377cfd01bd79c5c9db8b057eb2d95580865d73cb7e15d47d4b04d3a12b2991e0681e27ab51dd1be111d3218fd8410c7              134 Release
  cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/noarch/Contents-all
- 43157a75712dc98e36cd62ed695c252de9b6ba8a95c329a82424777c506adcd2125510cec609361268e1d79057df6fd87d572d6b27a0d1be8c77ccc2c6a3fa35               33 main/noarch/Contents-all.gz
+ d455ee2d383775be987568b9b41824259b50f988934c8ce66390fb7cf166a55bd7a53de018a64a3a992c9e895fbc968a498d0fd618aa1cc7751a55f096b1e3ca               33 main/noarch/Contents-all.gz
  cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/noarch/Packages
- b567af915bb9d8d41496d2f1b22395487d47032349f3bd4d31309bb45c5ddddb06a20d3cee42f13557411eb7e413df3614105f14f772c84af50f974f43ab53a5               29 main/noarch/Packages.gz
- 59e62892296003e2198cfd6a3d28798b2a6136ebaf1cc309f25a19bd4bee3665fdf9043ded1e9d9559277e8b8365a47b4f88040aad6ccc2093ad19493516137d             2000 main/noarch/Release
+ f5e4530dcf309e8f0b9f2463d9c2520c2494b8db52adfd58bce858e4d7cb9a8e986f624fa18c097d1237449df61aa4549e0ae3c3e43ff2b740fb8ba89ac443f3               29 main/noarch/Packages.gz
+ a614510437a86a11270c14843d2e693e3f68790403e1ae0e6aeedc227b1c31ecf8f6ceca5109a3e0a4ff6347b3efbc495e61b3dbabc0ee0184e9fa560fdbfcdb             2000 main/noarch/Release
