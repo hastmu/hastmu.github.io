@@ -5,3 +5,5 @@ DIST["stable.pool.all"]="repo/pool/stable-noarch"
 DIST["unstable.pool.all"]="repo/pool/unstable-noarch"
 DIST["root"]="$(pwd)"
 
+declare -A ARCH
+ARCH["all"]="1"

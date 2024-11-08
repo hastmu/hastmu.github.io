@@ -30,5 +30,28 @@ do
    ${item}
 done
 
+echo "- release.conf"
+cat > repo/release.conf <<BLOCK
+APT::FTPArchive::Release::Origin "hastmu";
+APT::FTPArchive::Release::Codename "stable";
+APT::FTPArchive::Release::Components "main";
+APT::FTPArchive::Release::Label "Local APT Repository";
+APT::FTPArchive::Release::Architectures "all";
+BLOCK
+
+for BRANCH in stable unstable
+do
+   for arch in ${!ARCH[@]}
+   do
+      echo dpkg-scanpackages --arch ${arch} ${DIST[${BRANCH}.pool.${arch}]} 
+      dpkg-scanpackages --arch ${arch} ${DIST[${BRANCH}.pool.${arch}]} > ${DIST[${BRANCH}.${arch}]}/Packages
+      #gzip -kc dists/${BRANCH}/${pkgbranch}/binary-${arch}/Packages > dists/${BRANCH}/${pkgbranch}/binary-${arch}/Packages.gz
+      #apt-ftparchive contents pool/${BRANCH}-${pkgbranch} > dists/${BRANCH}/${pkgbranch}/Contents-${arch}
+      #gzip -kc dists/${BRANCH}/${pkgbranch}/Contents-${arch} > dists/${BRANCH}/${pkgbranch}/Contents-${arch}.gz
+      #apt-ftparchive release dists/${BRANCH}/${pkgbranch}/binary-${arch} > dists/${BRANCH}/${pkgbranch}/binary-${arch}/Release
+      #apt-ftparchive release -c release.conf dists/${BRANCH} > dists/${BRANCH}/Release
+   done
+done
+
 git commit -m "update web"
 git push
