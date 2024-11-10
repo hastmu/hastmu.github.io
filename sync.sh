@@ -59,5 +59,6 @@ gpg -a --yes --output "${DIST[${BRANCH}.release]}/Release.gpg" --detach-sign "${
 gpg -a --yes --clearsign --output "${DIST[${BRANCH}.release]}/InRelease" --detach-sign "${DIST[${BRANCH}.${arch}]}/Release"
 
 echo "- final push"
+git add -A
 git commit -m "update web"
 git push

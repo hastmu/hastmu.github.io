@@ -2,7 +2,7 @@
 
 if [ $(id -u) -ne 0 ]
 then
-   echo "Sorry i have to run as root"
+   echo "Sorry i have to run as root, e.g. via sudo."
    exit 1
 fi
 
@@ -13,8 +13,7 @@ then
 else
    BRANCH="$1"
 fi
-# https://hastmu.github.io/repo/dist/dists/unstable/InRelease
-# https://hastmu.github.io/repo/dist/unstable/InRelease^C
+
 if [ "${BRANCH}" == "stable" ] || [ "${BRANCH}" == "unstable" ]
 then
    base="https://hastmu.github.io"
