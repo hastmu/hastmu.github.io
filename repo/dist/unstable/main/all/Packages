@@ -1,0 +1,15 @@
+Package: apt-proxy-detect
+Version: 0.0.0-main-59d1e23-1731225362
+Architecture: all
+Maintainer: nomail@nomail.no
+Depends: coreutils, grep, sed, wget, avahi-utils
+Filename: pool/unstable-all/apt-proxy-detect-0.0.0-main-59d1e23-1731225362_all.deb
+Size: 3788
+MD5sum: d26fc4d0fb201531a884edd62e2e9fa0
+SHA1: c21dbdc1f5df822d88114c0bf1040056c085865f
+SHA256: f99852a48be924f5c27e7ec0083b157f350ebe1af1b3029dcaafd599b028da5b
+Section: base
+Priority: optional
+Description: apt proxy detection
+Conflict: squid-deb-proxy-client
+
