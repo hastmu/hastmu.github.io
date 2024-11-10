@@ -1,0 +1,14 @@
+Architectures: all
+Codename: unstable
+Components: main
+Date: Sun, 10 Nov 2024 08:06:04 +0000
+Label: Local APT Repository
+Origin: hastmu
+MD5Sum:
+ 48f4f0bb60e27336fcc4b99d771a46c0              136 Release
+SHA1:
+ a0051e9f34aa332104ddf22bd4dfc3d94b1f4126              136 Release
+SHA256:
+ a718c8542e2524e67559de1b50da9adf72b33f53c59ad5e2d16d3465ba55e75a              136 Release
+SHA512:
+ fb3c6b4f49d01f1555c22a2aaf3f9b17a845eaf52912c8b2c2198400ecc9cb2609e8142336196546dc5578fb6b16f7757c99253ce8841b0c088794ada1fb795e              136 Release

@@ -1,0 +1,14 @@
+Architectures: all
+Codename: stable
+Components: main
+Date: Sun, 10 Nov 2024 08:06:04 +0000
+Label: Local APT Repository
+Origin: hastmu
+MD5Sum:
+ 692d7785f3ea9a8dad16fd083c46a535              134 Release
+SHA1:
+ 67edc2ec44a8e4e471394362bbb195e97a8be5a1              134 Release
+SHA256:
+ b5c3ce45fa537eb18da286c79720d49cee497cac3edf49c71ca4b64ba17d4c6e              134 Release
+SHA512:
+ 61ac7eb406806bc7b01c9712438556ed69531dca1293abe57778272e6c4162568bd0b0358872997fdbf5c71ff22b6a3f10f589a7d1d9d25dbdb8540dd0e9aff6              134 Release
