@@ -30,6 +30,10 @@ do
    ${item}
 done
 
+# only do this if something is new
+if [ 1 -eq 0 ]
+then
+
 echo "- release.conf"
 
 for BRANCH in stable unstable
@@ -57,6 +61,8 @@ done
 echo "- signing"
 gpg -a --yes --output "${DIST[${BRANCH}.release]}/Release.gpg" --detach-sign "${DIST[${BRANCH}.${arch}]}/Release"
 gpg -a --yes --clearsign --output "${DIST[${BRANCH}.release]}/InRelease" --detach-sign "${DIST[${BRANCH}.${arch}]}/Release"
+
+fi
 
 echo "- final push"
 git add -A
