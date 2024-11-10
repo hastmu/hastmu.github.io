@@ -31,6 +31,7 @@ do
 done
 
 # only do this if something is new
+git status
 if [ 1 -eq 0 ]
 then
 
