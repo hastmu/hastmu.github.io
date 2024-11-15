@@ -54,24 +54,27 @@ BLOCK
             cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" || true ;
             pwd
             echo "" > "${DIST[${BRANCH}.${tarch}]#*/}/Packages"
+            echo "" > "${DIST[${BRANCH}.${tarch}]#*/}/Contents-${tarch}"
          )      
          for arch in ${ARCH[${tarch}]}
          do
             echo "- process ${BRANCH}/${tarch}/${arch}"
             echo "- scan packages of ${arch} for ${tarch} in ${DIST[${BRANCH}.pool.${arch}]#*/}"
-           
             ( 
                cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" || true 
                dpkg-scanpackages --arch "${arch}" "${DIST[${BRANCH}.pool.${arch}]#*/}" >> "${DIST[${BRANCH}.${tarch}]#*/}/Packages"
             )
-            continue
             echo "- build contents..."
-            ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; apt-ftparchive contents "${DIST[${BRANCH}.pool.${arch}]#*/}" > "${DIST[${BRANCH}.${tarch}]#*/}/Contents-${tarch}" )
-            gzip -kc "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}" > "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}.gz"
+
+            ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; apt-ftparchive contents "${DIST[${BRANCH}.pool.${arch}]#*/}" >> "${DIST[${BRANCH}.${tarch}]#*/}/Contents-${tarch}" )
+
+            continue
+
             ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release  "${DIST[${BRANCH}.${arch}]#*/}" > "${DIST[${BRANCH}.${tarch}]#*/}/Release" )
             ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release -c "${DIST[${BRANCH}.release]#*/}/release.conf" "${DIST[${BRANCH}.release]#*/}" > "${DIST[${BRANCH}.release]#*/}/Release" )
          done
          gzip -kc "${DIST[${BRANCH}.${tarch}]}/Packages" > "${DIST[${BRANCH}.${tarch}]}/Packages.gz"
+         gzip -kc "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}" > "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}.gz"
       done
    done
 
