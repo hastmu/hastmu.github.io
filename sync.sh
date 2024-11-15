@@ -58,8 +58,8 @@ BLOCK
             gzip -kc "${DIST[${BRANCH}.${tarch}]}/Packages" > "${DIST[${BRANCH}.${tarch}]}/Packages.gz"
             echo "- build contents..."
             ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; apt-ftparchive contents "${DIST[${BRANCH}.pool.${arch}]#*/}" > "${DIST[${BRANCH}.${tarch}]#*/}/Contents-${tarch}" )
-            gzip -kc "${DIST[${BRANCH}.${arch}]}/Contents-${tarch}" > "${DIST[${BRANCH}.${arch}]}/Contents-${tarch}.gz"
-            ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release  "${DIST[${BRANCH}.${arch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Release" )
+            gzip -kc "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}" > "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}.gz"
+            ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release  "${DIST[${BRANCH}.${arch}]#*/}" > "${DIST[${BRANCH}.${tarch}]#*/}/Release" )
             ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release -c "${DIST[${BRANCH}.release]#*/}/release.conf" "${DIST[${BRANCH}.release]#*/}" > "${DIST[${BRANCH}.release]#*/}/Release" )
          done
       done
