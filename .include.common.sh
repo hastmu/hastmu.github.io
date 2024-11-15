@@ -11,4 +11,4 @@ DIST["stable.release"]="repo/dists/stable"
 DIST["unstable.release"]="repo/dists/unstable"
 
 declare -A ARCH
-ARCH["amd64"]="1"
+ARCH["amd64"]="all amd64"
