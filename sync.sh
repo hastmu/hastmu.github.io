@@ -55,7 +55,7 @@ BLOCK
          do
             echo "- scan packages of ${arch} for ${tarch} in ${DIST[${BRANCH}.pool.${arch}]#*/}"
             echo "" > "${DIST[${BRANCH}.${tarch}]#*/}/Packages"
-            ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; dpkg-scanpackages --arch "${arch}" "${DIST[${BRANCH}.pool.${tarch}]#*/}" >> "${DIST[${BRANCH}.${tarch}]#*/}/Packages" )
+            ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; pwd;  dpkg-scanpackages --arch "${arch}" "${DIST[${BRANCH}.pool.${tarch}]#*/}" >> "${DIST[${BRANCH}.${tarch}]#*/}/Packages" )
             echo "- build contents..."
             ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; apt-ftparchive contents "${DIST[${BRANCH}.pool.${arch}]#*/}" > "${DIST[${BRANCH}.${tarch}]#*/}/Contents-${tarch}" )
             gzip -kc "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}" > "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}.gz"
