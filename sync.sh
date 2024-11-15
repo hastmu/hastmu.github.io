@@ -77,6 +77,7 @@ BLOCK
 
 
          echo "- signing"
+         ls -al "${DIST[${BRANCH}.${tarch}]}/Release"
          gpg -a --yes --output "${DIST[${BRANCH}.release]}/Release.gpg" --detach-sign "${DIST[${BRANCH}.${tarch}]}/Release"
          gpg -a --yes --clearsign --output "${DIST[${BRANCH}.release]}/InRelease" --detach-sign "${DIST[${BRANCH}.${tarch}]}/Release"
 
