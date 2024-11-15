@@ -32,7 +32,7 @@ done
 
 # only do this if something is new 
 git status
-if [ 1 -eq 0 ]
+if [ 1 -eq 1 ]
 then
 
    echo "- release.conf"
