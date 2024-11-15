@@ -1,14 +1,14 @@
 
 Package: apt-proxy-detect
-Version: 0.0.0-main-1731688085
+Version: 0.0.0-main-1731688211
 Architecture: all
 Maintainer: nomail@nomail.no
 Depends: coreutils, grep, sed, wget, avahi-utils
-Filename: pool/unstable-all/apt-proxy-detect-0.0.0-main-1731688085_all.deb
+Filename: pool/unstable-all/apt-proxy-detect-0.0.0-main-24e8416-1731688211_all.deb
 Size: 3784
-MD5sum: 35905dfb59e67aa145165be767bf7ac9
-SHA1: 074925cc434de035348a558c7be25199ad25ac19
-SHA256: 2b040219d1f9651bf0bc9b652af5b9a2b0d8cd945a3abbd18c3c586f80242d07
+MD5sum: e37b0f9c172d821ca6e5c608fd5dc174
+SHA1: e2e8f9a3d3e853c845e86b63b14d83eac309fe78
+SHA256: 2aeeb3a37ead65db8acd71057b5cb1f6cc86ef9641722b44aaaea26650078a00
 Section: base
 Priority: optional
 Description: apt proxy detection
