@@ -51,6 +51,7 @@ BLOCK
       for tarch in ${!ARCH[@]}
       do
          echo "- process ${tarch}"
+         continue
          for arch in all
          do
             echo "- scan packages of ${arch} for ${tarch} in ${DIST[${BRANCH}.pool.${arch}]#*/}"
