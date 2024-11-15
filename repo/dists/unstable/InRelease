@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Fri, 15 Nov 2024 16:02:33 +0000
+MD5Sum:
+ 7f7e6f85326c6968fa125ceae92339fd              123 Contents-amd64
+ af3215b67689ccea053627e94cc6de0c               99 Contents-amd64.gz
+ b99103616317c18dc09fceeedfc7f04d              517 Packages
+ a7dbfe26780f812a60be76ac9fed74dc              380 Packages.gz
+ 513defe19199f65318078758618578f7               38 Release
+SHA1:
+ b31af8c7703ace9ff25e0310268eaa7b4a22595b              123 Contents-amd64
+ 9e8ae53b3cb859d7702144e32a9e1cb43ba70382               99 Contents-amd64.gz
+ 60e6f3852908cfe48309b5921324429d48d5c837              517 Packages
+ 792c9b8499bed68aa9191a817d65db71266cf141              380 Packages.gz
+ b097c02b11237425bbf5f3ca04d9e732be374729               38 Release
+SHA256:
+ 5c9ceb73a2727520584a1b6d9fa2532f32e166c8436c3755fa5cf97833b3e4a2              123 Contents-amd64
+ c538b3c0b1a74362ee2b9ba9ff024d9f5f363dd9ee22be794e9407bface9abcd               99 Contents-amd64.gz
+ 69fee247e863a1dbb2fb0a2c27bc5f3c9a4cc90f1b53196f42fe5bd121b6407f              517 Packages
+ 45bbc09b851ad033dd2e3a5461d731430ce0de134813cb9ea34f9ba486fe7e4c              380 Packages.gz
+ af19a7dfacf4d4ff813e3a0096e5f98d37c1805f6e501b80dd21f805e76eb755               38 Release
+SHA512:
+ 465b59051b955da6ee71243113a5cd78cf193af19d0b26aff3d9451fbd6e8443b26138d88e28962312bdf0ff7c4cd3c480c4b9d7b096e5cb010bb09e21653cac              123 Contents-amd64
+ aa388f02bfa79a8f586d7172fe92c751864e1d3424b6c9ff503102b76833e7448ddfaed00c6d88013dfcacf702003ada9faef949f10f0c33f0517490984e8262               99 Contents-amd64.gz
+ 7ad7d3b10e2165d6dc674fe10d865e7d3bed67d398901d460f78f2add70e09d9c56e52bd832f0f7e5704155d57e894c3723dd69ad656824e70028b3e0c2511e3              517 Packages
+ d9a81f6a4ed3dfd4bbccf37cbbf15e0447d4cebe1602dff6ca8c7f8e2a8fcbad707ed1be954da4c605335d2fd0194f565a1e0bcaa72118365ea8df01f757e84f              380 Packages.gz
+ b514d28351bcb66e435c077ac98305331d7e792db061cffc17f024ca7c1540c37ba2c184a6a18de201aec6192751382d4e363c81bc9be08d745de94b0526bf47               38 Release
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEt+IhbcjSCK2TSKG/8SIah2z7TsUFAmc3cJoACgkQ8SIah2z7
+TsVSNAwAmfF/IgHFHihFmqtRhWkR4N1eJmS4IE2AZ0CkTvxG1y+UTgf30exhEsqt
+o8Z+F6DjpIOx12iqQPRzJJ7coSvFg+w/5S7hr4aGGBGWidnVRYJse0hEZhM5gv+i
+MZPcC8d6vbgUhBsJGVykeJBsXZBiHZoxJDpMO4Xz6LPLj0+Wl9N6N6b6wi8RlcqO
+Geo8jlCBYnYqSeepuOUkW34C7rT6mPIYNCQrJEyJy3rhuRMP7kjTf3JYonh1RPj5
+j0lTBbNGSGi7+rjxpLYmI89i5NMNXQSjecLF9Nwpc4v1sTejgxadqd55dTORnmlE
+MZPtxZu/RsRanfI2JG1S0iVidBL/o7mmz7ulmsyAYtRGYHGHsHL4jLmBRKm0YOxD
+bF1Lv464uyKBWfPrI4t3dgMKZDwRQ4eZ+1BWwEOOu8bB87UV6AdI4L8fHY+Fw21X
+KWLPmT7adYWg35KBBUwbF5Wqm430bHm6gAHhgzvdEmwLtP41Xa71vwdgpG9TTwu4
+2ug3uPtp
+=E8MK
+-----END PGP SIGNATURE-----
