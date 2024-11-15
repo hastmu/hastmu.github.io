@@ -31,7 +31,8 @@ do
 done
 
 # only do this if something is new 
-git status
+repo_count=$(git status | grep repo | wc -l)
+echo "- repo changes: ${repo_count}"
 if [ 1 -eq 0 ]
 then
 
