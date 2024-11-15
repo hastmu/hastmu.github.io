@@ -1,6 +1,6 @@
 declare -A DIST
 DIST["stable.binary-amd64"]="repo/dists/stable/main/binary-amd64"
-DIST["unstable.binary-amd64"]="repo/dist/unstable/main/binary-amd64"
+DIST["unstable.binary-amd64"]="repo/dists/unstable/main/binary-amd64"
 DIST["stable.pool.all"]="repo/pool/stable-all"
 DIST["unstable.pool.all"]="repo/pool/unstable-all"
 DIST["stable.pool.amd64"]="repo/pool/stable-amd64"
