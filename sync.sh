@@ -30,17 +30,17 @@ do
    ${item}
 done
 
-# only do this if something is new
+# only do this if something is new 
 git status
 if [ 1 -eq 0 ]
 then
 
-echo "- release.conf"
+   echo "- release.conf"
 
-for BRANCH in stable unstable
-do
+   for BRANCH in stable unstable
+   do
 
-cat > "${DIST[${BRANCH}.release]}/release.conf" <<BLOCK
+   cat > "${DIST[${BRANCH}.release]}/release.conf" <<BLOCK
 APT::FTPArchive::Release::Origin "hastmu";
 APT::FTPArchive::Release::Codename "${BRANCH}";
 APT::FTPArchive::Release::Components "main";
@@ -48,24 +48,28 @@ APT::FTPArchive::Release::Label "Local APT Repository";
 APT::FTPArchive::Release::Architectures "all";
 BLOCK
 
-   for arch in ${!ARCH[@]}
-   do
-      ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; dpkg-scanpackages --arch "${arch}" "${DIST[${BRANCH}.pool.${arch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Packages" )
-      gzip -kc "${DIST[${BRANCH}.${arch}]}/Packages" > "${DIST[${BRANCH}.${arch}]}/Packages.gz"
-      ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; apt-ftparchive contents "${DIST[${BRANCH}.pool.${arch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Contents-${arch}" )
-      gzip -kc "${DIST[${BRANCH}.${arch}]}/Contents-${arch}" > "${DIST[${BRANCH}.${arch}]}/Contents-${arch}.gz"
-      ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release  "${DIST[${BRANCH}.${arch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Release" )
-      ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release -c "${DIST[${BRANCH}.release]#*/}/release.conf" "${DIST[${BRANCH}.release]#*/}" > "${DIST[${BRANCH}.release]#*/}/Release" )
+      for tarch in ${!ARCH[@]}
+      do
+         for arch in ${ARCH[${tarch}]}
+         do
+            echo "- scan packages of ${arch} for ${tarch} in ${DIST[${BRANCH}.pool.${tarch}]#*/}"
+            ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; dpkg-scanpackages --arch "${arch}" "${DIST[${BRANCH}.pool.${tarch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Packages" )
+            gzip -kc "${DIST[${BRANCH}.${arch}]}/Packages" > "${DIST[${BRANCH}.${arch}]}/Packages.gz"
+            ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; apt-ftparchive contents "${DIST[${BRANCH}.pool.${arch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Contents-${arch}" )
+            gzip -kc "${DIST[${BRANCH}.${arch}]}/Contents-${arch}" > "${DIST[${BRANCH}.${arch}]}/Contents-${arch}.gz"
+            ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release  "${DIST[${BRANCH}.${arch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Release" )
+            ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release -c "${DIST[${BRANCH}.release]#*/}/release.conf" "${DIST[${BRANCH}.release]#*/}" > "${DIST[${BRANCH}.release]#*/}/Release" )
+         done
+      done
    done
-done
 
-echo "- signing"
-gpg -a --yes --output "${DIST[${BRANCH}.release]}/Release.gpg" --detach-sign "${DIST[${BRANCH}.${arch}]}/Release"
-gpg -a --yes --clearsign --output "${DIST[${BRANCH}.release]}/InRelease" --detach-sign "${DIST[${BRANCH}.${arch}]}/Release"
+   echo "- signing"
+   gpg -a --yes --output "${DIST[${BRANCH}.release]}/Release.gpg" --detach-sign "${DIST[${BRANCH}.${arch}]}/Release"
+   gpg -a --yes --clearsign --output "${DIST[${BRANCH}.release]}/InRelease" --detach-sign "${DIST[${BRANCH}.${arch}]}/Release"
 
 fi
 
 echo "- final push"
-git add -A
+git add -A 
 git commit -m "update web"
 git push
