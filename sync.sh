@@ -72,14 +72,14 @@ BLOCK
          done
          gzip -kc "${DIST[${BRANCH}.${tarch}]}/Packages" > "${DIST[${BRANCH}.${tarch}]}/Packages.gz"
          gzip -kc "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}" > "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}.gz"
-         ( cd "${DIST[${BRANCH}.${tarch}]%%/*}" ; apt-ftparchive release  "${DIST[${BRANCH}.${tarch}]#*/}" > "${DIST[${BRANCH}.${tarch}]#*/}/Release" )
-         #( cd "${DIST[${BRANCH}.release]%%/*}" ; apt-ftparchive release -c "${DIST[${BRANCH}.release]#*/}/release.conf" "${DIST[${BRANCH}.release]#*/}" > "${DIST[${BRANCH}.release]#*/}/Release" )
+         #( cd "${DIST[${BRANCH}.${tarch}]%%/*}" ; apt-ftparchive release  "${DIST[${BRANCH}.${tarch}]#*/}" > "${DIST[${BRANCH}.${tarch}]#*/}/Release" )
+         ( cd "${DIST[${BRANCH}.release]%%/*}" ; apt-ftparchive release -c "${DIST[${BRANCH}.release]#*/}/release.conf" "${DIST[${BRANCH}.release]#*/}" > "${DIST[${BRANCH}.release]#*/}/Release" )
 
 
          echo "- signing"
 #         ls -al "${DIST[${BRANCH}.${tarch}]}/Release"
-         gpg -a --yes --output "${DIST[${BRANCH}.release]}/Release.gpg" --detach-sign "${DIST[${BRANCH}.${tarch}]}/Release"
-         gpg -a --yes --clearsign --output "${DIST[${BRANCH}.release]}/InRelease" --detach-sign "${DIST[${BRANCH}.${tarch}]}/Release"
+         gpg -a --yes --output "${DIST[${BRANCH}.release]}/Release.gpg" --detach-sign "${DIST[${BRANCH}.release]}/Release"
+         gpg -a --yes --clearsign --output "${DIST[${BRANCH}.release]}/InRelease" --detach-sign "${DIST[${BRANCH}.release]}/Release"
 
       done
 

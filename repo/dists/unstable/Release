@@ -1,6 +1,3 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
-
 Architectures: all
 Codename: unstable
 Components: main
@@ -35,17 +32,3 @@ SHA512:
  b1da73a3c184c93f7059c5145822e60eba496b54fd77a2c4351918070d6f7d1d5f7acdc1c09c65d6a1c49f3548ec73d5d4d444c44c0bce8b574e7eeb265b1e04              517 main/binary-amd64/Packages
  3e97ca5b6803ac253f21ca5a7fdf7267f3d89872da0c53fa89fa9e4b32a2b7e5445e8f70d948f6b807a6bd6f33d42a5cd43573440330470b276746e898bb9cff              379 main/binary-amd64/Packages.gz
  79547e30d44a2d0a262aa5fb62173e3dedcd15889defb7b54a183b05aa7709f58d25d7a3258d55941a810fa4083db844d4d67a7821691ee489c83a7bddbe603e             2016 main/binary-amd64/Release
------BEGIN PGP SIGNATURE-----
-
-iQGzBAEBCgAdFiEEt+IhbcjSCK2TSKG/8SIah2z7TsUFAmc3cdwACgkQ8SIah2z7
-TsVQKwv8CkMATsx4VCCmuWFrvzSE7TMneMXwPl4oaUwBKyKndMqPtlHD1gnG4Nkx
-cMDy5NCoWa91SpRlVIZfz7hAxHM9IXacsXyv86/Pmuk6jIGrqktZ3CT4HzoPVl7k
-tDeTbIsSvcz8ITii8m2p0y7WxuVOzadNzakglWqu6HcVGBBNeaBl8yVnIf2OFzyD
-tXy32qsItBWi44EWds50Ek0toTzo1DOmb9noFjoYq6Ha4GMy265IFwYFml7u1A2L
-H8Uy1Dco0vvtQPL94XmVuMQENSGnA9VxzdwVC8TlPpWws9ObIh6/8qaitmeb33L+
-LmyY/tcWB7JwUacq/lhcejLbv+O+X/xw3/7eXRXzWkavnc7jTR2Xa93LGni6sdzX
-NSzsj88vdu6Pa+jek1DW7OipZCcXoXzQjYU2WrRiyqFFKqccIc/aND+EYu5CAAw+
-GfMonmWU3Bcb2wAGE+guWYcm3nk3wZxH3u3LOS91o4RCzM799u1HMv4htWH6OGTu
-9D1SBb95
-=+Wj8
------END PGP SIGNATURE-----
