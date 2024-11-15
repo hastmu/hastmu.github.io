@@ -50,10 +50,9 @@ BLOCK
 
       for tarch in ${!ARCH[@]}
       do
-         echo "- process ${tarch}"
-         continue
          for arch in all
          do
+            echo "- process ${BRANCH}/${tarch}/${arch}"
             echo "- scan packages of ${arch} for ${tarch} in ${DIST[${BRANCH}.pool.${arch}]#*/}"
             echo "" > "${DIST[${BRANCH}.${tarch}]#*/}/Packages"
             ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; pwd;  dpkg-scanpackages --arch "${arch}" "${DIST[${BRANCH}.pool.${tarch}]#*/}" >> "${DIST[${BRANCH}.${tarch}]#*/}/Packages" )
