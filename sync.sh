@@ -74,12 +74,17 @@ BLOCK
          gzip -kc "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}" > "${DIST[${BRANCH}.${tarch}]}/Contents-${tarch}.gz"
 #         ( cd "${DIST[${BRANCH}.${arch}]%%/*}" ; apt-ftparchive release  "${DIST[${BRANCH}.${tarch}]#*/}" > "${DIST[${BRANCH}.${tarch}]#*/}/Release" )
          ( cd "${DIST[${BRANCH}.release]%%/*}" ; apt-ftparchive release -c "${DIST[${BRANCH}.release]#*/}/release.conf" "${DIST[${BRANCH}.release]#*/}" > "${DIST[${BRANCH}.release]#*/}/Release" )
+
+
+         echo "- signing"
+         gpg -a --yes --output "${DIST[${BRANCH}.release]}/Release.gpg" --detach-sign "${DIST[${BRANCH}.${tarch}]}/Release"
+         gpg -a --yes --clearsign --output "${DIST[${BRANCH}.release]}/InRelease" --detach-sign "${DIST[${BRANCH}.${tarch}]}/Release"
+
       done
+
+
    done
 
-   echo "- signing"
-   gpg -a --yes --output "${DIST[${BRANCH}.release]}/Release.gpg" --detach-sign "${DIST[${BRANCH}.${arch}]}/Release"
-   gpg -a --yes --clearsign --output "${DIST[${BRANCH}.release]}/InRelease" --detach-sign "${DIST[${BRANCH}.${arch}]}/Release"
 
 fi
 
