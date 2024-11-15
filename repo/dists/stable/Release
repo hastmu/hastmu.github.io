@@ -1,29 +1,29 @@
 Architectures: all
 Codename: stable
 Components: main
-Date: Fri, 15 Nov 2024 15:58:43 +0000
+Date: Fri, 15 Nov 2024 15:59:30 +0000
 Label: Local APT Repository
 Origin: hastmu
 MD5Sum:
- 4a13b2f61c94ac596326c651409f979f              134 Release
+ 199b92776e38087a78501c83ababd369              134 Release
  d41d8cd98f00b204e9800998ecf8427e                0 main/binary-amd64/Contents-amd64
  e2dfac618db9ed76031216200dd66d7d               35 main/binary-amd64/Contents-amd64.gz
  d41d8cd98f00b204e9800998ecf8427e                0 main/binary-amd64/Packages
  87fa56decc279604a9dae24224a62f70               29 main/binary-amd64/Packages.gz
 SHA1:
- a01ca586caea79682d2901f9277d78d42062d88c              134 Release
+ 5c7235ff5923a47e2f99ee4a452fc4dc2adcbecb              134 Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-amd64/Contents-amd64
  4e0909c3bf529e742e81523f6b9d2c25c133c725               35 main/binary-amd64/Contents-amd64.gz
  da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-amd64/Packages
  61fa1fdd2449678d683acd9ed281891507de1a53               29 main/binary-amd64/Packages.gz
 SHA256:
- 8b091ed01103835005c844c0663d06a6d787f7602e8fa80158bd8745bf506971              134 Release
+ 994eacdeefff8834996edd92b13ee4671cf11981f909e33c8ebe821881461734              134 Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-amd64/Contents-amd64
  067701108cd6fa2a2101c0b5304331816ea9c55244515e31ccdeed439af564b8               35 main/binary-amd64/Contents-amd64.gz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-amd64/Packages
  9f274855e906054bd8defcf4668dc683c28d357ebed1748fba05aca655c34f3c               29 main/binary-amd64/Packages.gz
 SHA512:
- 17c6b93fde345ce01bf14436919b86a393e2d39c22fca54d8420043e1670e0473f5b7056160e45b8412102c241da3ae4fb68caa621dab23c20e353a6babebfdb              134 Release
+ 1833f692087a61829bf482efc40ab680ed1dbc690d7c6360241aed80a7928dc10324f231c3cd6e275f955d9bc6fda43764a394c2a4455fe727c7008b322d1fc0              134 Release
  cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-amd64/Contents-amd64
  9abc241475328a3cf841e4e2f8d242951b8fa0863e0f52f35704a9e6523a63c030ac3e05de73a5429a7faf52130934586b9389970374a81bac8df3deb7250189               35 main/binary-amd64/Contents-amd64.gz
  cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-amd64/Packages
