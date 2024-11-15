@@ -52,6 +52,7 @@ BLOCK
       do
          ( 
             cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" || true ;
+            pwd
             echo "" > "${DIST[${BRANCH}.${tarch}]#*/}/Packages"
          )      
          for arch in all
@@ -61,7 +62,7 @@ BLOCK
            
             ( 
                cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" || true 
-               dpkg-scanpackages --arch "${arch}" "${DIST[${BRANCH}.pool.${tarch}]#*/}" >> "${DIST[${BRANCH}.${tarch}]#*/}/Packages"
+               dpkg-scanpackages --arch "${arch}" "${DIST[${BRANCH}.pool.${arch}]#*/}" >> "${DIST[${BRANCH}.${tarch}]#*/}/Packages"
             )
             continue
             echo "- build contents..."
