@@ -1,0 +1,30 @@
+Architectures: all
+Codename: stable
+Components: main
+Date: Fri, 15 Nov 2024 15:58:16 +0000
+Label: Local APT Repository
+Origin: hastmu
+MD5Sum:
+ 8433e728b6513c9cbc5facc98637e542              134 Release
+ d41d8cd98f00b204e9800998ecf8427e                0 main/binary-amd64/Contents-amd64
+ e2dfac618db9ed76031216200dd66d7d               35 main/binary-amd64/Contents-amd64.gz
+ d41d8cd98f00b204e9800998ecf8427e                0 main/binary-amd64/Packages
+ 87fa56decc279604a9dae24224a62f70               29 main/binary-amd64/Packages.gz
+SHA1:
+ cd899903d1f3c0cacd241929e6f048b91fa0b650              134 Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-amd64/Contents-amd64
+ 4e0909c3bf529e742e81523f6b9d2c25c133c725               35 main/binary-amd64/Contents-amd64.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-amd64/Packages
+ 61fa1fdd2449678d683acd9ed281891507de1a53               29 main/binary-amd64/Packages.gz
+SHA256:
+ 07263554cc05c37541e224210ee046e2f231c384e4416ed18ecc14244840b5e9              134 Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-amd64/Contents-amd64
+ 067701108cd6fa2a2101c0b5304331816ea9c55244515e31ccdeed439af564b8               35 main/binary-amd64/Contents-amd64.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-amd64/Packages
+ 9f274855e906054bd8defcf4668dc683c28d357ebed1748fba05aca655c34f3c               29 main/binary-amd64/Packages.gz
+SHA512:
+ e3cb1b52cd91d123206de5ebf48b4e2a6e4175ee0a0a4d8e0af147dd5f367724edc3b7ebf94cbfc5dcf0692eb7c51fe0347e7ab667e3f05c19e2752db3851106              134 Release
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-amd64/Contents-amd64
+ 9abc241475328a3cf841e4e2f8d242951b8fa0863e0f52f35704a9e6523a63c030ac3e05de73a5429a7faf52130934586b9389970374a81bac8df3deb7250189               35 main/binary-amd64/Contents-amd64.gz
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-amd64/Packages
+ 836e35b2602bcb13d7649bd2ab28e1c3f1925b1b4b44098c66a4040ed9f63f51859a97127e1ec7ee398180f02ec98783e76af669d652fee2dc8472ed32e94d50               29 main/binary-amd64/Packages.gz
