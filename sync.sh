@@ -53,7 +53,7 @@ BLOCK
          echo "- process ${tarch}"
          for arch in ${ARCH[${tarch}]}
          do
-            echo "- scan packages of ${arch} for ${tarch} in ${DIST[${BRANCH}.pool.${tarch}]#*/}"
+            echo "- scan packages of ${arch} for ${tarch} in ${DIST[${BRANCH}.pool.${arch}]#*/}"
             ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; dpkg-scanpackages --arch "${arch}" "${DIST[${BRANCH}.pool.${tarch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Packages" )
             gzip -kc "${DIST[${BRANCH}.${arch}]}/Packages" > "${DIST[${BRANCH}.${arch}]}/Packages.gz"
             ( cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" ; apt-ftparchive contents "${DIST[${BRANCH}.pool.${arch}]#*/}" > "${DIST[${BRANCH}.${arch}]#*/}/Contents-${arch}" )
