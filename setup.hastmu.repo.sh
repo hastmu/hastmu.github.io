@@ -1,17 +1,19 @@
 #!/bin/bash
 
+# copyright 2024 by gh-hastmu@gmx.de
+# homed at: https://github.com/hastmu/
+
 if [ $(id -u) -ne 0 ]
 then
    echo "Sorry i have to run as root, e.g. via sudo."
    exit 1
 fi
 
-if [ -z "$1" ]
+BRANCH=${BRANCH:="$1"}
+if [ -z "${BRANCH}" ]
 then
    echo "which branch? (stable|unstable)"
    read BRANCH
-else
-   BRANCH="$1"
 fi
 
 if [ "${BRANCH}" == "stable" ] || [ "${BRANCH}" == "unstable" ]
