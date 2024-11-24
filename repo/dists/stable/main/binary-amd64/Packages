@@ -13,3 +13,18 @@ Priority: optional
 Description: apt proxy detection
 Conflict: squid-deb-proxy-client, auto-apt-proxy
 
+Package: apt-proxy-detect
+Version: 0.0.1-release-v1.0.0-1732485773
+Architecture: all
+Maintainer: nomail@nomail.no
+Depends: coreutils, grep, sed, wget, avahi-utils
+Filename: pool/stable-all/apt-proxy-detect-0.0.1-release-v1.0.0-4ed966e-1732485773_all.deb
+Size: 3608
+MD5sum: 605ed8fdc1d8329ee0adcacdc49d5c61
+SHA1: 367bc490756946746f78a21e2040f2cc7b1063c6
+SHA256: 8a859f03180f986fb8880d96f8b129077089341b9865618c918b80bb722d6fe4
+Section: base
+Priority: optional
+Description: apt proxy detection
+Conflict: squid-deb-proxy-client, auto-apt-proxy
+

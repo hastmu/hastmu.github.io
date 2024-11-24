@@ -54,6 +54,7 @@ BLOCK
          ( 
             cd "${DIST[${BRANCH}.pool.${arch}]%%/*}" || true ;
             pwd
+            [ ! -x "${DIST[${BRANCH}.${tarch}]#*/}" ]  && mkdir -p "${DIST[${BRANCH}.${tarch}]#*/}"
             echo "" > "${DIST[${BRANCH}.${tarch}]#*/}/Packages"
             echo "" > "${DIST[${BRANCH}.${tarch}]#*/}/Contents-${tarch}"
          )      
