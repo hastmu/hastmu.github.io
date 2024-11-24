@@ -2,3 +2,5 @@ etc/apt/apt.conf.d/30apt-proxy-detect.conf		    apt-proxy-detect
 usr/local/bin/apt-proxy-detect.sh			    apt-proxy-detect
 etc/apt/apt.conf.d/30apt-proxy-detect.conf		    apt-proxy-detect
 usr/local/bin/apt-proxy-detect.sh			    apt-proxy-detect
+etc/apt/apt.conf.d/30apt-proxy-detect.conf		    apt-proxy-detect
+usr/local/bin/apt-proxy-detect.sh			    apt-proxy-detect
