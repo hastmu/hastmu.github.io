@@ -1,58 +1,13 @@
 Package: apt-proxy-detect
-Version: 0.0.1-release-v1.0.0-1732485419
-Architecture: all
-Maintainer: nomail@nomail.no
-Depends: coreutils, grep, sed, wget, avahi-utils
-Filename: pool/stable-all/apt-proxy-detect-0.0.1-release-v1.0.0-4ed966e-1732485419_all.deb
-Size: 3612
-MD5sum: baf4a0fd3db4228e82fc2115977af83c
-SHA1: 9038f0c7b006af981472c207281d5b3cf8b0ed66
-SHA256: 9dfbb9e36962c096f6099d58d9dadb657037a43214bd46ad23221a5a43f0801b
-Section: base
-Priority: optional
-Description: apt proxy detection
-Conflict: squid-deb-proxy-client, auto-apt-proxy
-
-Package: apt-proxy-detect
-Version: 0.0.1-release-v1.0.0-1732485773
-Architecture: all
-Maintainer: nomail@nomail.no
-Depends: coreutils, grep, sed, wget, avahi-utils
-Filename: pool/stable-all/apt-proxy-detect-0.0.1-release-v1.0.0-4ed966e-1732485773_all.deb
-Size: 3608
-MD5sum: 605ed8fdc1d8329ee0adcacdc49d5c61
-SHA1: 367bc490756946746f78a21e2040f2cc7b1063c6
-SHA256: 8a859f03180f986fb8880d96f8b129077089341b9865618c918b80bb722d6fe4
-Section: base
-Priority: optional
-Description: apt proxy detection
-Conflict: squid-deb-proxy-client, auto-apt-proxy
-
-Package: apt-proxy-detect
-Version: 0.0.1-release-v1.0.0-1732485419
-Architecture: all
-Maintainer: nomail@nomail.no
-Depends: coreutils, grep, sed, wget, avahi-utils
-Filename: pool/stable-all/apt-proxy-detect-0.0.1-release-v1.0.0-4ed966e-1732485419_all.deb
-Size: 3612
-MD5sum: baf4a0fd3db4228e82fc2115977af83c
-SHA1: 9038f0c7b006af981472c207281d5b3cf8b0ed66
-SHA256: 9dfbb9e36962c096f6099d58d9dadb657037a43214bd46ad23221a5a43f0801b
-Section: base
-Priority: optional
-Description: apt proxy detection
-Conflict: squid-deb-proxy-client, auto-apt-proxy
-
-Package: apt-proxy-detect
 Version: 1.2.2-release-v1.0.0-v1.2.2
 Architecture: all
 Maintainer: nomail@nomail.no
 Depends: coreutils, grep, sed, wget, avahi-utils
 Filename: pool/stable-all/apt-proxy-detect-1.2.2-release-v1.0.0-4ed966e-v1.2.2_all.deb
-Size: 3608
-MD5sum: 12e5b8169f93225be5aa32ba9f8daef3
-SHA1: 00203c2615651d5c6ff5ddc11ae71eb57582013f
-SHA256: 2e40f63f2fbe8fb757fcafa4012e1c15694f2fd6234abc307143e04c553b537c
+Size: 3604
+MD5sum: 0f9a88ed01d276f48a7286399e227ece
+SHA1: 1088d1a388fbfe3305863c2e63a1bebf6a7fe3cb
+SHA256: 63c2624e8ac9324be0d7d793c964d13d1fafe64a497f5e622bda11aa51f90701
 Section: base
 Priority: optional
 Description: apt proxy detection
